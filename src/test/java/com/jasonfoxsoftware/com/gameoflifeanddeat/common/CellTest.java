@@ -17,4 +17,11 @@ public class CellTest {
         assertEquals(90,testCell.x);
         assertEquals(45,testCell.y);
     }
+
+    @Test
+    public void verifyToStringFormat() {
+        Cell testCell = new Cell(50, 50);
+        String testCellString = testCell.toString();
+        assertEquals("{50, 50}", testCellString);
+    }
 }

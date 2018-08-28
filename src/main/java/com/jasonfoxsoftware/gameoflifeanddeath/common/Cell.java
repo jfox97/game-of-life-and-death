@@ -13,4 +13,8 @@ public class Cell {
     public Cell () {
         this(0, 0);
     }
+
+    public String toString() {
+        return String.format("{%d, %d}", x, y);
+    }
 }
